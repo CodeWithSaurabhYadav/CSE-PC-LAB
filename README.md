@@ -16,8 +16,8 @@ copy it on your computer:
 ```
 git clone https://www.github.com/CodeWithSaurabhYadav/CSE-PC-LAB
 ```
-<span stype="color: red">
-	Note: This command only works if ` git ` is installed on your system
-</span>
+	Note: This command only works if <b><i>git</i></b> is installed on your system <br>                                    
 ### Requirement
-To install ` git ` on <img alt="undefined" src="https://badgen.net/badge/Download/Windows/?color=blue&icon=windows&label"></a>
+To install ` git ` on 
+
+<a href="https://git-scm.com/download/win" target="_blank"><img alt="undefined" src="https://badgen.net/badge/Download/Windows/?color=blue&icon=windows&label"></a>
