@@ -9,14 +9,14 @@
 learning ` C ` language...
 	
 ## Download
-* [Requirement](#requirement)
+* [Requirement to download it](#requirement) 
 To run this projects, download it or use the below command to
 copy it on your computer:
 
 ```
 git clone https://www.github.com/CodeWithSaurabhYadav/CSE-PC-LAB
 ```
-* Note: This command only works if ` <b><i>git</i></b> ` is installed on your system <br>                                    
+* Note: This command only works if ` git ` is installed on your system <br>                                    
 ### Requirement
 To install ` git ` on you sytem click below icons according to your system.
 <br>
@@ -27,5 +27,5 @@ To install ` git ` on you sytem click below icons according to your system.
 * You must also install ` C ` language to run the code on your system.
 <br>
 <p align="center">
-<img alt="undefined" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fsimple.wikipedia.org%2Fwiki%2FC_(programming_language)&psig=AOvVaw2vwlwFRbaZtrlwep6GUiI5&ust=1636206593570000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPjzltqugfQCFQAAAAAdAAAAABAD">
+<img alt="undefined" src="media/C_IMG.png">
 </p>
