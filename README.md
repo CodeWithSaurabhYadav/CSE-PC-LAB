@@ -9,15 +9,15 @@
 learning ` C ` language...
 	
 ## Download
-* [Requirement](requirement)
+* [Requirement](#requirement)
 To run this projects, download it or use the below command to
 copy it on your computer:
 
 ```
 git clone https://www.github.com/CodeWithSaurabhYadav/CSE-PC-LAB
 ```
-* Note: This command only works if <b><i>git</i></b> is installed on your system <br>                                    
-## Requirement
+* Note: This command only works if ` <b><i>git</i></b> ` is installed on your system <br>                                    
+### Requirement
 To install ` git ` on 
 
 <a href="https://git-scm.com/download/win" target="_blank"><img alt="undefined" src="https://badgen.net/badge/Download/Windows/?color=blue&icon=windows&label"></a>
