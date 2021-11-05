@@ -16,7 +16,7 @@ copy it on your computer:
 ```
 git clone https://www.github.com/CodeWithSaurabhYadav/CSE-PC-LAB
 ```
-	Note: This command only works if <b><i>git</i></b> is installed on your system <br>                                    
+* Note: This command only works if <b><i>git</i></b> is installed on your system <br>                                    
 ### Requirement
 To install ` git ` on 
 
