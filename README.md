@@ -1,6 +1,6 @@
 ## Table of contents
 * [General info](#general-info)
-* [Setup](#setup/Download)
+* [Setup](#setup/download)
 
 ## General info
 ### CSE-PC-LAB
@@ -15,6 +15,6 @@ copy it on your computer:
 ```
 git clone https://www.github.com/CodeWithSaurabhYadav/CSE-PC-LAB
 ```
-<font color="red">
+<font color="#ff0000">
 	Note: This command only works if git is installed on your system
 </font>
