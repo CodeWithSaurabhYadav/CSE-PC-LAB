@@ -14,8 +14,5 @@ void main()
 	scanf("%s %d-%d-%d",day,&date,&month,&year);
 	
 	//Printing the values
-	printf("\nDay : %s\n",day);
-	printf("Date : %d\n",date);
-	printf("Month : %d\n",month);
-	printf("Year : %d\n",year);
+	printf("\nDay : %s\nDate : %d\nMonth : %d\nYear : %d\n",day,date,month,year);
 }
