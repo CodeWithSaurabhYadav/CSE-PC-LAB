@@ -12,4 +12,5 @@ int main()
 	{
 		printf("Only one condition is true [OR(||)]\n");	
 	}
+	return 0;
 }
