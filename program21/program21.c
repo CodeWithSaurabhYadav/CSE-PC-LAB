@@ -4,7 +4,7 @@
 int main()
 {
     /* initial code */
-    int a[5] = {2,45,1,6,5};
+    int a[5] = {2,45,1,-6,5};
     int max = a[0];
     // Largest
     for (int i = 1; i < 5; i++)
