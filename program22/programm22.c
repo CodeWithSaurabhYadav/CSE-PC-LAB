@@ -44,6 +44,6 @@ int main()
         /* code */
         printf("%d ",a[l]);
     }
-    printf("]");      
+    printf("]\n");      
     return 0;
 }
