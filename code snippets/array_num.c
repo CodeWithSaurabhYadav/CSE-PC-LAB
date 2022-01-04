@@ -12,12 +12,18 @@ int main()
     printf("\n");
     printf("\n");
     /* 2D array */
-    int array2D[2][2] = {{1,2},{2,1}};
+    int array2D[5][10] = {
+        {1,2,3,4,5,6,7,8,9,10},
+        {1,2,3,4,5,6,7,8,9,11},
+        {1,2,3,4,5,6,7,8,9,12},
+        {1,2,3,4,5,6,7,8,9,13},
+        {1,2,3,4,5,6,7,8,9,14},
+        };
     /* loop 1 for rows */
-    for (int j = 0; j < 2; j++)
+    for (int j = 0; j < 5; j++)
     {
         /* loop 2 for columns */
-        for (int k = 0; k < 2; k++)
+        for (int k = 0; k < 10; k++)
         {
             /* printing the array values */
             printf("%d ",array2D[j][k]);
