@@ -2,8 +2,9 @@
 
 int main()
 {
+    goto hello;
+    printf("Hell");
     hello : 
         printf("hello world\n");
-    goto hello;
     return 0;
 }
