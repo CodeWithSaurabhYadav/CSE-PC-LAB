@@ -1,4 +1,5 @@
 #include<stdio.h>
+#define PI 3.141
 
 void main()
 {
@@ -14,7 +15,7 @@ void main()
 	printf("________________________________________________\n");
 	printf("Enter the radius of circle : ");
 	scanf("%f",&cir_rad);
-	cir_area=3.141*cir_rad*cir_rad;
+	cir_area=PI*cir_rad*cir_rad;
 	printf("Area of circle is : %f\n",cir_area);
 
 	float rec_len,rec_bre,rec_area;
