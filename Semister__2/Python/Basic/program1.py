@@ -6,11 +6,11 @@ print("Calculator1")
 star = 148
 print("*"*star)
 print('''
-      1)Div
-      2)Mul
-      3)Add
-      4)Sub
-      ''')
+    1)Div
+    2)Mul
+    3)Add
+    4)Sub
+    ''')
 print("*"*star)
 while (True):
     try:

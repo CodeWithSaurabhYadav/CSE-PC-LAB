@@ -1,0 +1,41 @@
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+9
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+.
+.
+.
+.
+n
+
+Hint:
+    If number is divisible by 3 and not divisible by 5 print Fizz
+    If number is divisible by 5 and not divisible by 3 print Bizz
+    If number is divisible by 3 and 5 both print FizzBuzz
+    
+
+RAK
+AKE
+KES
+ESH
+
+PRADEEP
+PRA
+RAD
+ADE
+DEE
+EEP
+
+a,e,i,o,u
