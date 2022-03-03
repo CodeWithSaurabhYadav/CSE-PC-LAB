@@ -24,21 +24,16 @@ To install ` git ` on you sytem click below icons according to your system.
 <a href="https://git-scm.com/download/mac" target="_blank"><img alt="undefined" src="https://badgen.net/badge/Download/macOS/?color=grey&icon=apple&label"></a>
 <a href="https://git-scm.com/download/linux" target="_blank"><img alt="undefined" src="https://badgen.net/badge/Download/Linux64/?color=orange&icon=terminal&label"></a>
 <br>
-* You must also install ` C ` language to run the code on your system.
+* You must also install ` C ` language to run the code of the Semister_1 on your system.
 <br>
-* You must
-
-
-
- also install ` Python3 , SimpleCpp` language to run the code of the Semister_2 on your syster
+* You must also install ` Python3 , SimpleCpp` language to run the code of the Semister_2 on your syster
 # To install ` SimpleCpp ` on your system follow below links:
+<br>
 <img alt="undefined" src="https://badgen.net/badge/Download/Windows/?color=blue&icon=windows&label">
 https://user-images.githubusercontent.com/50881320/156508349-843734d0-d3fa-46be-b3dc-158bba50d0dd.mp4
-
+<br>
 <img alt="undefined" src="https://badgen.net/badge/Download/Linux64/?color=orange&icon=terminal&label">
 https://user-images.githubusercontent.com/50881320/156508404-a94dc723-2c04-4baa-824b-18539d42acaf.mp4
-
+<br>
 <img alt="undefined" src="https://badgen.net/badge/Download/macOS/?color=grey&icon=apple&label">
 https://user-images.githubusercontent.com/50881320/156508396-aaaa90df-16bc-463e-b4b7-13e489cf3175.mp4
-
-
