@@ -26,7 +26,7 @@ To install ` git ` on you sytem click below icons according to your system.
 <br>
 * You must also install ` C ` language to run the code of the Semister_1 on your system.
 * You must also install ` Python3 AND SimpleCpp` language to run the code of the Semister_2 on your system
-<br>
+
 ## To install SimpleCpp on your system follow below links:
 <br>
 <img alt="undefined" src="https://badgen.net/badge/Download/Windows/?color=blue&icon=windows&label">
