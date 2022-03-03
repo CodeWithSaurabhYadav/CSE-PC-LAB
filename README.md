@@ -1,6 +1,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Download](#download)
+* [Install Simple Cpp](#To install SimpleCpp on your system follow below links)
 
 ## General info
 ### - [CSE-PC-LAB](https://github.com/CodeWithSaurabhYadav/CSE-PC-LAB)
