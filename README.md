@@ -1,7 +1,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Download](#download)
-* [Install Simple Cpp](#To-install-SimpleCpp-on-your-system-follow-below-links:)
+* [Install SimpleCpp](#to-install-simplecpp-on-your-system-follow-below-links)
 
 ## General info
 ### - [CSE-PC-LAB](https://github.com/CodeWithSaurabhYadav/CSE-PC-LAB)
@@ -28,7 +28,7 @@ To install ` git ` on you sytem click below icons according to your system.
 * You must also install ` C ` language to run the code of the Semister_1 on your system.
 * You must also install ` Python3 AND SimpleCpp` language to run the code of the Semister_2 on your system
 
-## To install SimpleCpp on your system follow below links:
+## To install SimpleCpp on your system follow below links
 <br>
 <img alt="undefined" src="https://badgen.net/badge/Download/Windows/?color=blue&icon=windows&label">
 https://user-images.githubusercontent.com/50881320/156508349-843734d0-d3fa-46be-b3dc-158bba50d0dd.mp4
