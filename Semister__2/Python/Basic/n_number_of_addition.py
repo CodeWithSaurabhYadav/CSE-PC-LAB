@@ -37,7 +37,7 @@ def divide(divident,divisor):
 #Input the numbers
 def enter(num_num):
     lst = []
-    for i in range(0,num_num):
+    for i in range(num_num):
         item = int(input(f"Enter the number {i+1} : "))
         lst.append(item)
     return lst
