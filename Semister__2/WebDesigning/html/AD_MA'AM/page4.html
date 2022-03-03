@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table tag</title>
+    <style>
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table,tr,td,th{
+            border: 3px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 0.5%;
+            margin: auto;
+        }
+        table,tr,th,td{
+            background: rgb(230, 249, 230);
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h3 class="head">
+            Time Table
+        </h3>
+    </div>
+    <div class="content">
+        <table class="timetable">
+            <th colspan="9" style="background-color: rgb(255, 255, 211);"> CS 2</th>
+            <tr>
+                <th style="background-color: rgb(255, 255, 211);">Days</th>
+                <th style="background-color: rgb(255, 255, 211);">8:30-9:30</th>
+                <th style="background-color: rgb(255, 255, 211);">9:30-10:30</th>
+                <th style="background-color: rgb(255, 255, 211);">10:30-10:45</th>
+                <th style="background-color: rgb(255, 255, 211);">10:45-11:45</th>
+                <th style="background-color: rgb(255, 255, 211);">11:45-12:45</th>
+                <th style="background-color: rgb(255, 255, 211);">11:45-12:45</th>
+                <th style="background-color: rgb(255, 255, 211);">1:30-2:30</th>
+                <th style="background-color: rgb(255, 255, 211);">2:30-3:30</th>
+            </tr>
+            <tr>
+                <th style="background-color: rgb(255, 255, 211);">Monday</th>
+                <td>Calculus<br>
+                    (HSP)
+                </td>
+                <td>ES<br>
+                    (KS)
+                </td>
+                <td rowspan="6" style="background-color: rgb(255, 255, 211);">Refreshment Break</td>
+                <td>WD<br>
+                    (JT)
+                </td>
+                <td>ES<br>
+                    (KS)
+                </td>
+                <td rowspan="6" style="background-color: rgb(255, 255, 211);">Refreshment Break</td>
+                <td colspan="2">
+                    PP<br>
+                    (VDB)
+                </td>
+            </tr>
+            <tr>
+                <th style="background-color: rgb(255, 255, 211);">Tuesday</th>
+                <td>Calculus
+                    (HSP)
+                </td>
+                <td>DLD
+                    (JAP)
+                </td>
+                <td colspan="2">
+                    B1_DLD(JAP)<br>B2_ED(KS)
+                </td>
+                <td colspan="2">
+                    PP<br>
+                    (VDB)
+                </td>
+            </tr>
+            <tr>
+                <th style="background-color: rgb(255, 255, 211);">Wednesday</th>
+                <td>Calculus<br>(HSP)</td>
+                <td>
+                    PP<br>
+                    (VDB)
+                </td>
+                <td>DLD
+                    (JAP)
+                </td>
+                <td>MOOC</td>
+                <td colspan="2">
+                    B1_DLD(JAP)<br>B2_ED(KS)
+                </td>
+            </tr>
+            <tr>
+                <th style="background-color: rgb(255, 255, 211);">Thursday</th>
+                <td>MOOC</td>
+                <td>ES<br>(KS)</td>
+                <td colspan="2">
+                    PP<br>
+                    (VDB)
+                </td>
+                <td colspan="2">WD<br>(AJD)</td>
+            </tr>
+            <tr>
+                <th style="background-color: rgb(255, 255, 211);">Friday</th>
+                <td colspan="2">NL<br>(AJD)</td>
+                <td colspan="2">ED<br>(KS)</td>
+                <td>WD<br>(JT)</td>
+                <td>Library</td>
+            </tr>
+            <tr>
+                <th style="background-color: rgb(255, 255, 211);">Saturday</th>
+                <td colspan="2">WD<br>(JT)</td>
+                <td>WD<br>(JT)</td>
+                <td>DLD
+                    (JAP)
+                </td>
+                <td colspan="2">Sport/Club Activity</td>
+            </tr>
+        </table>
+    </div>
+    <div style="float: left;">
+        <p>
+            ES - Environment Studies<br>
+            WD - Web Designing<br>
+            PP - Python Programming<br>
+            NL - Networking Laboratory<br>
+            ED - Engineering Drafting<br>
+            DLD - Digital Logic Design<br>
+            Calculus
+        </p>
+    </div>
+    <div style="float: left;">
+        <p>
+            KS - Mr. Keyur surti<br>
+            AJD - Ms. Ankita J. Desai , JT - ms. Jinal Tandel<br>
+            VDB - Mr. Vishwajit D. Bakrola
+            JAP - Mr. Jay A. Patel
+            HSP - Mr. Hardik S. Patel
+        </p>
+    </div>
+</body>
+</html>
