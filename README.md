@@ -6,8 +6,7 @@
 ## General info
 ### - [CSE-PC-LAB](https://github.com/CodeWithSaurabhYadav/CSE-PC-LAB)
 * Programming with C documents
-<br> This repo contains the files and code which I typed or created while
-learning ` C ` language...
+<br> This repo contains the files and code which I typed or created while studying programming.
 	
 ## Download
 * [Requirement to download it](#requirement) 
