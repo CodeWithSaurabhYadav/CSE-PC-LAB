@@ -9,6 +9,7 @@
         *{
             box-sizing: border-box;
             text-justify: auto;
+            font-family: "Ubuntu",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body{
             background: rgb(250, 228, 232);
@@ -29,23 +30,35 @@
         .heading{
             background: rgb(252, 252, 143);
         }
-        .below{
-            margin: 50px auto;
+        .container {
             width: 60%;
-            border: 3px solid grey;
-            background: rgb(240, 233, 233);
+            border: 3px solid black;
+            margin: 2% auto;
+            background-color: rgb(219, 255, 198);
         }
-        .item{
-            margin: 5px auto;
-            padding: 2% 2% 2% 10%;
+        .item {
+            margin: 1%;
+            padding: 1% 1%;
         }
-        #teacher{
+        #Subjects {
             float: left;
-            width: 47%;
+            width: 48%;
         }
-        #student{
+        #Teachers {
             float: left;
-            width: 47%;
+            width: 48%;
+        }
+        #stationary {
+            /* float: left; */
+            width: 98%;
+            clear: both;
+        }
+        .justfy{
+            text-align: justify;
+        }
+        h2{
+            margin: 1% auto;
+            width: 20%;
         }
     </style>
 </head>
@@ -143,28 +156,34 @@
                 <td colspan="2">Sport/Club Activity</td>
             </tr>
         </table>
-        <div class="below">
-            <div class="item" id="teacher" >
-                <p>
-                    ES - Environment Studies<br>
-                    WD - Web Designing<br>
-                    PP - Python Programming<br>
-                    NL - Networking Laboratory<br>
-                    ED - Engineering Drafting<br>
-                    DLD - Digital Logic Design<br>
-                    Calculus
-                </p>
-            </div>
-            <div class="item" id="subject" >
-                <p>
-                    KS - Mr. Keyur surti<br>
-                    AJD - Ms. Ankita J. Desai
-                    JT - ms. Jinal Tandel<br>
-                    VDB - Mr. Vishwajit D. Bakrola
-                    JAP - Mr. Jay A. Patel
-                    HSP - Mr. Hardik S. Patel
-                </p>
-            </div>
+    </div>
+    <div class="container">
+        <div id="Subjects" class="item">
+            <h3>Subjects</h3>
+            <p>
+                ES - Environment Studies<br>
+                WD - Web Designing<br>
+                PP - Python Programming<br>
+                NL - Networking Laboratory<br>
+                ED - Engineering Drafting<br>
+                DLD - Digital Logic Design<br>
+                Calculus<br>
+            </p>
+        </div>
+        <div id="Teachers" class="item justfy">
+            <h3>Teachers</h3>
+            <p>
+                KS - Mr. Keyur surti<br>
+                AJD - Ms. Ankita J. Desai<BR>
+                JT - ms. Jinal Tandel<br>
+                VDB - Mr. Vishwajit D. Bakrola<BR>
+                JAP - Mr. Jay A. Patel<BR>
+                HSP - Mr. Hardik S. Patel<BR>
+            </p>
+        </div>
+        <div id="stationary" class="item justfy">
+            <p id="stationaryspara" class="parts">
+            </p>
         </div>
     </div>
 </body>
