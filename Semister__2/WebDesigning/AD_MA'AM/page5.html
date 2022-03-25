@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            text-align: justify;
+        }
+        body{
+            background: url(images/hearts.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+        }
+        .main_form{
+            background: rgb(255, 186, 255);
+            border: 3px dashed purple;
+            width: 20%;
+            margin: auto;
+        }
+        .head{
+            background: rgb(253, 153, 255);
+            border: 1px solid rgb(255, 19, 19);
+            width: 90%;
+            margin: 2% auto;
+        }
+        .form1{
+            background: pink;
+            border: 1px solid red;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 4%;
+            padding: 10px 10px;
+        }
+        .name_input{
+            width: 98%;
+        }
+        .buttons{
+            background: red;
+            color: black;
+        }
+        .buttons:hover{
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_form">
+        <h2 class="head">HTML FORMS</h2>
+        <div class="formdiv">
+            <form action="script.js" class="form1">
+                <!-- label and input:text -->
+                <label for="Fname">First Name:</label><br>
+                <input type="text" placeholder="First Name" class="name_input"><br>
+                <label for="Lname">Last Name:</label><br>
+                <input type="text" placeholder="Second Name" class="name_input"><br><br>
+                
+                <!-- RADIO  -->
+                <input type="radio" name="lang" id="HTML" checked>HTML<br>
+                <input type="radio" name="lang" id="CSS">CSS<br>
+                <input type="radio" name="lang" id="Javascript">Javascript<br><br>
+                
+                <!-- Checkbox -->
+                <input type="checkbox" name="Bike" id="bike">I have a bike <br>
+                <input type="checkbox" name="Car" id="car">I have a car <br>
+                <input type="checkbox" name="Boat" id="boat">I have a boat <br>
+                <!-- BUTTONS -->
+                <input type="submit" value="Submit" id="submit" class="buttons">
+                <input type="reset" value="Reset" id="reset" class="buttons">
+            </form>
+        </div>
+    </div>
+    <marquee direction="left"><h2>HAPPY HTML DAY</h2></marquee>
+    <marquee direction="right"><h2>HAPPY HTML DAY</h2></marquee>
+    </body>
+    </html>
