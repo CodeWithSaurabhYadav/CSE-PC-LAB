@@ -1,58 +1,31 @@
-#/bin/python
 '''
-# This is for write random 100 number in a file.
+# This part of code is just for writng random 100 numbers into the file
 import random as rd
-file_obj = open("FILE_1.txt","w")
-for i in range(100):
-    number = rd.randint(-100,100)
-    file_obj.write(f"{number}\n")
-file_obj.close()
+
+with open("FILE_1.txt","w") as file:
+    for i in range(100):
+        file.write(str(rd.randint(-100,100)))
+        file.write("\n")
 '''
+#This is to make list from file
+def file_list_creator():
+    with open("FILE_1.txt","r") as file:
+        str_lst = file.readlines()  #This gives us srting list with '\n' at the end of each number
+    no_str_lst = []
+    for element in str_lst:
+        no_str_lst.append(int(element.strip())) #Using strip function we change the element of str_lst to integer values
+    return no_str_lst   #This is the integer list that we are returning
 
-# This is file method file
-from pexpect import EOF
+#Finding and returning min and max values from lst extracted from file
+def min_max_lst(lst):
+    lst.sort()
+    return lst[0],lst[len(lst)-1] #returning min,max value using indexing
 
-
-class FILE_NUMBER():
-    def max_min_from_file(number_lst):
-        min = number_lst[0]
-        max = number_lst[1]
-        number_lst.sort(reverse=True)
-        return number_lst[len(number_lst)-1], number_lst[0]
-    def file_number_list(file):
-        number_lst = []
-        with open(file,"r") as file:
-            # Initilizing the list for our operation
-            main_lst = []
-            striped_lst = []
-            number_lst = []
-            flag = True
-            # Creating the list from file
-            while flag:
-                num = file.readline()
-                if num == '':
-                    # print("EOF reached.")
-                    flag = False
-                else:
-                    # print("list appended.")
-                    main_lst.append(num)
-            # Removing the newline character from the list
-            for element in main_lst:
-                striped_lst.append(element.strip())
-
-            # Converting the files into integer
-            for index in range(len(striped_lst)):
-                number_lst.append(int(striped_lst[index]))
-        return number_lst
-# Main Program
+#This is just a main function
 def main():
-    file_name = input("Enter file name (ONLY TXT) with extension : ")
-    number_lst = FILE_NUMBER.file_number_list(file_name)
-    # print(number_lst)
-    min,max = FILE_NUMBER.max_min_from_file(number_lst)
-    print()
-    print("The Maximum number in the file is :",max)
-    print("The Minimum number in the file is :",min)
-    
-if __name__ == "__main__":
-    main()
+    lst = file_list_creator()
+    min,max = min_max_lst(lst)
+    print("The max number is {0}".format(max))
+    print("The min number is {0}".format(min))
+
+main()

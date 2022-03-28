@@ -1,0 +1,18 @@
+body{
+    background-image: url("../images/university.png");
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center cover;
+    backface-visibility: hidden;
+    background-attachment: fixed;
+    text-align: justify;
+}
+#para2{
+    color: white;
+    background-color: black;
+    opacity: 0.6;
+}
+div{
+    background-image: url(../images/hearts.jpg);
+    opacity: 0.4;
+}

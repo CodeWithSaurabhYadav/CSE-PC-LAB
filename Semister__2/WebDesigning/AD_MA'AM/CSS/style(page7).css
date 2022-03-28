@@ -1,0 +1,26 @@
+body{
+    color: blueviolet;
+    text-align: justify;
+}
+h1{
+    background-color: aqua;
+}
+h2{
+    background-color: rgb(190, 253, 253);
+}
+h3{
+
+    background-color: rgba(0, 128, 128, 0.2);
+}
+h4{
+    background-color: #f6fa73;
+}
+h5{
+    background-color: hsl(126, 67%, 89%);
+}
+h6{
+    background-color: hsla(126, 232%, 89%, 0.6);
+}
+p{
+    color: brown;
+}

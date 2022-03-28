@@ -9,7 +9,6 @@
         *{
             box-sizing: border-box;
             text-justify: auto;
-            font-family: "Ubuntu",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body{
             background: rgb(250, 228, 232);
@@ -32,36 +31,30 @@
         .heading{
             background: rgb(252, 252, 143);
         }
-        .container {
+        .below{
+            margin: 50px auto;
             width: 60%;
+<<<<<<< HEAD:Semister__2/WebDesigning/html/AD_MA'AM/page4.html
             border: 3px solid black;
             border-radius: 12px;
             margin: 2% auto;
             background-color: rgb(219, 255, 198);
+=======
+            border: 3px solid grey;
+            background: rgb(240, 233, 233);
+>>>>>>> 0c25d89e9de164100eb4013e998dfff2386e7358:Semister__2/WebDesigning/AD_MA'AM/page4.html
         }
-        .item {
-            margin: 1%;
-            padding: 1% 1%;
+        .item{
+            margin: 5px auto;
+            padding: 2% 2% 2% 10%;
         }
-        #Subjects {
+        #teacher{
             float: left;
-            width: 48%;
+            width: 47%;
         }
-        #Teachers {
+        #student{
             float: left;
-            width: 48%;
-        }
-        #stationary {
-            /* float: left; */
-            width: 98%;
-            clear: both;
-        }
-        .justfy{
-            text-align: justify;
-        }
-        h2{
-            margin: 1% auto;
-            width: 20%;
+            width: 47%;
         }
     </style>
 </head>
@@ -159,34 +152,28 @@
                 <td colspan="2">Sport/Club Activity</td>
             </tr>
         </table>
-    </div>
-    <div class="container">
-        <div id="Subjects" class="item">
-            <h3>Subjects</h3>
-            <p>
-                ES - Environment Studies<br>
-                WD - Web Designing<br>
-                PP - Python Programming<br>
-                NL - Networking Laboratory<br>
-                ED - Engineering Drafting<br>
-                DLD - Digital Logic Design<br>
-                Calculus<br>
-            </p>
-        </div>
-        <div id="Teachers" class="item justfy">
-            <h3>Teachers</h3>
-            <p>
-                KS - Mr. Keyur surti<br>
-                AJD - Ms. Ankita J. Desai<BR>
-                JT - ms. Jinal Tandel<br>
-                VDB - Mr. Vishwajit D. Bakrola<BR>
-                JAP - Mr. Jay A. Patel<BR>
-                HSP - Mr. Hardik S. Patel<BR>
-            </p>
-        </div>
-        <div id="stationary" class="item justfy">
-            <p id="stationaryspara" class="parts">
-            </p>
+        <div class="below">
+            <div class="item" id="teacher" >
+                <p>
+                    ES - Environment Studies<br>
+                    WD - Web Designing<br>
+                    PP - Python Programming<br>
+                    NL - Networking Laboratory<br>
+                    ED - Engineering Drafting<br>
+                    DLD - Digital Logic Design<br>
+                    Calculus
+                </p>
+            </div>
+            <div class="item" id="subject" >
+                <p>
+                    KS - Mr. Keyur surti<br>
+                    AJD - Ms. Ankita J. Desai
+                    JT - ms. Jinal Tandel<br>
+                    VDB - Mr. Vishwajit D. Bakrola
+                    JAP - Mr. Jay A. Patel
+                    HSP - Mr. Hardik S. Patel
+                </p>
+            </div>
         </div>
     </div>
 </body>
