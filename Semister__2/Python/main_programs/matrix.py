@@ -6,32 +6,38 @@ from numpy import product
 def row_column():
     while True:
         try:
-            row = int(input("Enter the number of rows of the matrix : "))
-            column = int(input("Enter the number of colnumns of the matrix : "))
-            if row >= 1 and column>=1:
-                break
-            else:
-                print("Enter number more than or equal to 1 for rows/column")
-        except Exception as e:
-            print("Enter only integer value for row/column")
+            try:
+                row = int(input("Enter the number of rows of the matrix : "))
+                column = int(input("Enter the number of colnumns of the matrix : "))
+                if row >= 1 and column>=1:
+                    break
+                else:
+                    print("Enter number more than or equal to 1 for rows/column")
+            except Exception as e:
+                print("Enter only integer value for row/column")
+        except KeyboardInterrupt:
+            print("Invalid Key Binding")
     return row,column
 
 def choice_fun():
     print('''The available functions are :\n
-          1) Addition\n
-          2) Subtraction\n
-          3) Multiplication\n
-          4) Inverse\n
-          5) Transpose\n''')
+          1) Addition
+          2) Subtraction
+          3) Multiplication
+          4) Inverse
+          5) Transpose''')
     while True:
         try:
-            choice = int(input("Choice : "))
-            if choice <= 5 and choice > 0:
-                break
-            else:
-                print("Enter from above choice only")
-        except Exception as e:
-            print("Invalid Input")
+            try:
+                choice = int(input("Choice : "))
+                if choice <= 5 and choice > 0:
+                    break
+                else:
+                    print("Enter from above choice only")
+            except Exception as e:
+                print("Invalid Input")
+        except KeyboardInterrupt:
+            print("Invalid Key Binding")
     return choice
 
 def matrix_addition(matrix1,matrix2):
@@ -86,8 +92,8 @@ def main():
         print("Matrix 2")
         matrix2 = input_matrix(row_col[0],row_col[1])
         sum_matrix = matrix_addition(matrix1,matrix2)
-        for row in range(len(diff_matrix)):
-            print(diff_matrix[row])
+        for row in range(len(sum_matrix)):
+            print(sum_matrix[row])
             
     elif choice == 2:
         print("Enter the values of the matrixfirst {0} will be the element of the rows")
