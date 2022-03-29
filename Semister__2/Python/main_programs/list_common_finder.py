@@ -1,9 +1,5 @@
 #/bin/python3
 
-from itertools import count
-from operator import index
-
-
 def comapare(lst1,lst2):
     lst = []
     count_lst = []
@@ -32,7 +28,7 @@ def main():
     lst2 = input_list(ele_num)
     
     val_lst,num_lst = comapare(lst1,lst2)
-    print("The number of times is : ")
+    print("The number of times is :\nNumber : Number of times it occur")
     for index in range(len(val_lst)):
         print("{0} : {1}".format(val_lst[index],num_lst[index]))
 main()
