@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: rgb(255, 255, 196);
+}
+.container{
+    background: url("../images/university.png");
+    padding: 2%;
+    width: 90%;
+    margin: auto;
+    border: 4px solid black;
+}
+.container:hover{
+    background: url("../images/htmlbloack.jpeg");
+}
+p{
+    color: blue;
+    padding: 2%;
+}
+#para1{
+    font-family:'Times New Roman', Times, sans-serif;
+    background: rgb(32, 0, 63);
+    border: 2px solid grey;
+    font-size: 28px;
+    text-align: left;
+    color: white;
+    text-shadow: 2px 2px 3px red, -2px -2px 5px yellow,0px 0px 8px yellow ;
+}
+#para1:hover{
+    background: red;
+    color: black;
+    text-align: justify;
+}
+.second{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', monospace,Geneva, Verdana, sans-serif;
+    background: url("../images/hearts.jpg");
+    opacity: 100%;
+    border: 3px solid black;
+    text-align: right;
+}
+.second:hover{
+    background: url("../images/UTU.png");
+    background-position: center;
+    background-size: cover;
+    color: black;
+    text-align: justify;
+    text-shadow: 2px 2px 3px red, -2px -2px 5px yellow,0px 0px 8px yellow ;
+}
+.third{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 3px dashed maroon;
+    background: rgba(255, 176, 30,0.7);
+    text-align: justify;
+    text-indent: 10px;
+}
+.third:hover{
+    background: red;
+    color: black;
+    text-align: justify;
+    text-shadow: 2px 2px 3px red, -2px -2px 5px yellow,0px 0px 8px yellow ;
+}
