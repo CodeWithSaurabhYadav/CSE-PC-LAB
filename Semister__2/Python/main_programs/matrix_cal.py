@@ -21,7 +21,8 @@ def choice_fun():
           1) Addition
           2) Subtraction
           3) Multiplication
-          4) Transpose''')
+          4) Transpose
+          5) Exit''')
     while True:
         try:
             try:
