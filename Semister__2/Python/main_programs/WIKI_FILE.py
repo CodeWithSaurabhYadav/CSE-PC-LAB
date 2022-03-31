@@ -78,12 +78,7 @@ def global_finder(text):
     check()
 # Main function to control the flow of the program
 def main():
-    print('''
-          Your choices :
-          1) Find text
-          2) Global
-          3) Exit
-          ''')
+    print()
     while True:
         try:
             try:
@@ -91,23 +86,39 @@ def main():
                 break
             except Exception as e:
                 print("Enter correct input")
-            if choice == 1:
-                file_name = input("Enter the text file name with extension(.txt) : ")
-                searchable_txt = input("Enter the word you want to search : ").lower()
-                text = extract_txt(file_name)
-                count = counter(text,searchable_txt)
-            elif choice == 2:
-                file_name = input("Enter the text file name with extension(.txt) : ")
-                global_finder(file_name)
-            elif choice == 3:
-                print("Thanks for using the program.\nExiting.......")
-                exit()
-            else:
-                print("Invalid input!!! Please enter choice form above only")
-                main()
         except KeyboardInterrupt:
             print("The entered choice is in valid.")
             main()
+    if choice == 1:
+        while True:
+            try:
+                file_name = input("Enter the text file name with extension(.txt) : ")
+                searchable_txt = input("Enter the word you want to search : ").lower()
+                break
+            except KeyboardInterrupt:
+                print("Invalid !!!")
+        text = extract_txt(file_name)
+        count = counter(text,searchable_txt)
+    elif choice == 2:
+        while True:
+            try:
+                file_name = input("Enter the text file name with extension(.txt) : ")
+                break
+            except KeyboardInterrupt:
+                print("Invalid !!!")
+        global_finder(file_name)
+    elif choice == 3:
+        print("Thanks for using the program.\nExiting.......")
+        exit()
+    else:
+        print("Invalid input!!! Please enter choice form above only")
+        main()
     
 if __name__ == "__main__":
+    print('''
+        Your choices :
+        1) Find text
+        2) Global
+        3) Exit
+        ''')
     main()

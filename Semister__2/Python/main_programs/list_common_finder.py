@@ -31,8 +31,6 @@ def main():
     print("The number of times is :\nElement : Number of times it occur")
     for index in range(len(val_lst)):
         print("{0} : {1}".format(val_lst[index],num_lst[index]))
-<<<<<<< HEAD
-main()
-=======
-main()
->>>>>>> 2f7da81488fef34485bde7570276acc570bb9b71
+
+if __name__ == "__main__":
+    main()
