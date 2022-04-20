@@ -1,8 +1,5 @@
 #/bin/python3.10
 
-from cgi import print_arguments
-
-
 class ParentClass:
     name = "Saurabh"
     
