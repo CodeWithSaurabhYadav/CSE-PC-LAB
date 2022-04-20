@@ -24,14 +24,15 @@ class BankAccount:
             self.AccBalance-=WithdrawAmount
         print("*"*100)
         print("The Amount Debited.\nThe Account Balance is : ",self.AccBalance)
-        
+    
+    # Displaying the details of the Account Holder
     def Display(self):
         print("*"*100)
         print("Account Number : ",self.AccNumber)
         print("Account Holder : ",self.AccHolder)
         print("Account Balance : ",self.AccBalance)
         
-        
+# Taking details of the Account Holder (Function)
 def PersonDetails():
     while True:
         try:
@@ -43,8 +44,9 @@ def PersonDetails():
             print("Invalid Details...\n")
     return AccNum,AccName,AccBal
 
+# Storing the values of the Person in the below variables
 AccNum1,AccName1,AccBal1 = PersonDetails()
-    
+
 # Person 1 Details
 F_Person = BankAccount(AccNum1,AccName1,AccBal1)
 # Person 1 Account Deposit
