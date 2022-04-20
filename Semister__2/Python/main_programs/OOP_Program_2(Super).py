@@ -13,8 +13,10 @@ class Teacher(Staff):
     def __init__(self, salary, department):
         self.salary = salary
         self.department = department
+        # Below is the super class which refers to the Staff Class
         super().__init__("Saurabh", 18)
-        
+    
+    # This will display the details provided
     def Display(self):
         print("Name :",self.name)
         print("Age :",self.age)
