@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding elements using javascript</title>
+    <style>
+        body{
+            background-color: rgb(209, 254, 254);
+        }
+        div{
+            text-align: center;
+        }
+        img{
+            display: block;
+            width: 500px;
+            margin: auto;
+            border: 10px double black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Adding elements</h3>
+    </div>
+    <script>
+        var image = document.createElement("IMG");
+        image.setAttribute("src","https://picsum.photos/500/300");
+        document.body.append(image);
+
+        var anchor = document.createElement("A");
+        anchor.setAttributeNode("image");
+        anchor.setAttribute("href","https://picsum.photos/1000/700");
+        document.body.append(anchor)
+    </script>
+</body>
+</html>

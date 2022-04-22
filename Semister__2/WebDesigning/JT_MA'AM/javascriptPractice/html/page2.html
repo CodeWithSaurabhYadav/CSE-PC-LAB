@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetAttribute</title>
+    <style>
+        #imageloader:hover{
+            opacity: 80%;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(252, 252, 210);">
+    <div style="text-align: center;">
+        <h3>The setAttirbute()</h3>
+        <br>
+        <img alt="Could Not load image" id="imageloader">
+        <br><br><br>
+        <button onclick="loadimage()">Load image</button>
+    </div>
+    <script>
+        function loadimage(){
+            var image = document.getElementById("imageloader");
+            image.setAttribute("src","https://picsum.photos/500/300");
+            image.style.border = "6px solid black";
+            image.style.borderRadius = "20px";
+            image.style.cursor = "pointer";
+        }
+    </script>
+</body>
+</html>
+</html>
