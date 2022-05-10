@@ -7,9 +7,6 @@ attributes and a method named display() that prints the attribute values on the 
 Call both the methods by creating an instance std_obj of the class student
 '''
 
-from unicodedata import name
-
-
 class student:
     def get_data(self,name,age,branch,city):
         self.std_name = name
