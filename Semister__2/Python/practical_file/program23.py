@@ -5,11 +5,6 @@ Write a python program to read the content of a file and return the number of
 words in a file to the user
 '''
 
-from secrets import choice
-from tkinter import N
-from traceback import print_tb
-
-
 def global_finder(text):
     def make_list(file_name):
         # This reads the lines of the text file
