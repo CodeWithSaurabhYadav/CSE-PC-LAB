@@ -7,9 +7,6 @@
 #         file.close()
 #         return counter_num
 
-from secrets import choice
-
-
 def extract_txt(file_name):
     # This reads the lines of the text file
     with open(file_name,"r") as file:
