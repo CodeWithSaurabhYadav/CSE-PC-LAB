@@ -27,7 +27,7 @@ print("This is negative indexing of tuple :",tup1[-5])
 # (b) slicing of the tuple
 print("This is a slicing of the tuple :",tup1[2:5])
 
-# (c) updation of the tuple elements
+# (c) updating of the tuple elements
 tup1 = list(tup1)
 print("The tuple is converted to list so that it can be updarted.", tup1)
 tup1[5] = 25

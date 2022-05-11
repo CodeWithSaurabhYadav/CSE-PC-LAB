@@ -7,8 +7,6 @@ numbers.
 
 # => functions
 
-def Add():
-    pass
 print("Calculator1")
 star = 148
 print("*"*star)

@@ -16,45 +16,35 @@ print(lst)
 
 # List data structure methods
 
-print("append()")
 lst.append(8)      # lst_name.append(value)
-print(lst)
+print("Append :",lst)
 
-print("extend()")
 lst2 = [9,10]
 print(lst2)
 lst.extend(lst2)    # lst_name.extend(another_lst)
-print(lst)
+print("Extend :",lst)
 
-print("insert()")
 lst.insert(0,0)     # lst_name.extend(index,value)
-print(lst)
+print("Insert :",lst)
 
-print("remove()")
 lst.remove(10)      # lst_name.remove(value_to_remove)
-print(lst)
+print("Remove",lst)
 
-print("clear()")
 lst2.clear()         # Accepts no argument but clears the entire list -- lst_name.clear()
-print(lst2)
+print("Clear :",lst2)
 
-print("index()")
-print(lst.index(5))         # lst_name.index(value_to_get_index)
+print("Index: ",lst.index(5))         # lst_name.index(value_to_get_index)
 
-print("count()")
-print(lst.count(3))         # lst_name.count(value_to_count)
+print("Count :",lst.count(3))         # lst_name.count(value_to_count)
 
-print("sort()")
 lst.sort()      # Arranges the entire list item in assending order -- lst_name.sort()
-print(lst)
+print("Sort :",lst)
 
-print("reverse()")
 lst.reverse()      # Arranges the entire list item in decending/reverse order -- lst_name.reverse()
-print(lst)
+print("Reverse :",lst)
 
-print("copy()")
 lst3 = lst.copy()
-print(lst3)
+print("Copy :",lst3)
 
 print()
 print()

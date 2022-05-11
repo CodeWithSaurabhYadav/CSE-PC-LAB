@@ -27,7 +27,7 @@ def min_max_2(lst):
     return min,max
 
 # Taking input from the user
-for lst_index in range(10):
+for lst_index in range(int(input("Enter the no. of elements you want in the list : "))):
     while True:
         try:
             try:
