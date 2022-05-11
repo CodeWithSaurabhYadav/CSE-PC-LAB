@@ -7,14 +7,14 @@ class university:
         self.city = city
     
 class professor(university):
-    def __init__(self, designation,name,highest_qualification,area_of_research,year_of_joining,year_of_experience,name_of_institute,city):
+    def __init__(self, designation,highest_qualification,area_of_research,year_of_experience,name_of_institute):
         self.designation = designation
         self.highest_qualtfication = highest_qualification
         self.area_of_research = area_of_research
         self.year_of_experience = year_of_experience
         self.name_of_institute = name_of_institute
-        super().__init__(name,year_of_joining,city)
-        
+        university.__init__(self,name,year_of_estd,city)
+    
     def display(self):
         print("Designation :",self.designation)
         print("Name :",self.name)
@@ -74,8 +74,9 @@ class peon(university):
         print("Name of institute :",self.name_of_instituate)
         print("City :",self.city)
         
+obj = university("Dr. Jay",2002,"Vapi")
 print("*"*100)
-professor1 = professor("Asst. Professor","Dr. Jay","PHD","Electronics",2005,10,"AMTICS","Bardoli")
+professor1 = professor("Asst. Professor","PHD","Electronics",10,"AMTICS")
 professor1.display()
 print("*"*100)
 lab_assistant1 = lab_assistant("Pryesh","none","Badminton","2005","AMTICS","Bardoli")

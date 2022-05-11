@@ -1,5 +1,10 @@
 #/bin/python3.10
 
+import enroll
+enroll.print_enroll.enroll()
+
+
+
 def row_column():
     while True:
         try:
