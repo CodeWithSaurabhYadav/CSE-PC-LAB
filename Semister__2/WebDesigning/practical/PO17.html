@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PO17</title>
+        <style>
+        *{
+            font-size: 25px;
+        }
+        h1,
+        h2 {
+            color: hotpink;
+            display: flex;
+            justify-content: center;
+        }
+
+        #mybutton {
+            display: block;
+            margin: 0 auto;
+        }
+
+        #innerdiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #myList {
+            align-content: center;
+        }
+        #deldiv{
+            display: block;
+            width: 900px;
+            align-items: center;
+            text-align: center;
+        }
+        li{
+            list-style: none;
+        }
+        button{
+            font-weight: 900;
+            border-radius: 8px;
+        }
+        button:hover{
+            opacity: 0.7;;
+        }
+    </style>
+    </head>
+
+    <body>
+        <h1>
+            Saurabh Yadav<br>
+        </h1>
+        <div id="innerdiv"></div>
+        <h2>click on "click me" to add element</h2>
+        <button id="mybutton">
+            click me
+        </button><b><br></b>
+        <div id="deldiv">
+            <h3>Elemet will delete one-by-one after clicking on "Delete" button</h3>
+            <ul id="myList">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+            <button onclick="myFunction()">Delete</button>
+        </div>
+        <script>
+        document.getElementById("mybutton").
+            addEventListener("click", function () {
+                document.getElementById("innerdiv").
+                    innerHTML = "<h3>This is a Added element</h3>";
+            });
+        function myFunction() {
+            const list = document.getElementById("myList");
+            list.removeChild(list.firstElementChild);
+        }
+    </script>
+    </body>
+</html>

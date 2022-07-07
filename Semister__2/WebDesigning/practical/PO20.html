@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PO20</title>
+
+    <!-- CSS -->
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+            *{
+                box-sizing: border-box;
+                font-size: 20px;
+                font-family: 'Koulen', cursive;
+            }
+            #one{
+                display: flex;
+                justify-content: center;
+                margin-top: 300px;
+            }
+            div{
+                background: linear-gradient(to bottom,red, orange,yellow,white);
+                display: block;
+                width: 500px;
+                margin: auto;
+                border-radius: 12px;
+                padding: 30px;
+            }
+            input[type=number]::-webkit-inner-spin-button, 
+            input[type=number]::-webkit-outer-spin-button { 
+                -webkit-appearance: none; 
+                margin: 0; 
+            }
+            .NumberInput{
+                width: 100%;
+                text-align: right;
+                text-transform: uppercase;
+                border: 2px solid green;
+                height: 40px;
+                margin: 10px 0px;
+                padding: 10px;
+                border-radius: 8px;
+            }
+            td{
+                color: white;
+            }
+            button{
+                background: linear-gradient(to left, red, orange, yellow,white);
+                color: black;
+                font-size: 25px;
+                font-weight: 400;
+                border-radius: 8px;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+            button:hover{
+                transition-delay: 3s;
+                background: linear-gradient(to left, white, yellow, orange, red);
+            }
+            p{
+                color: red;
+                font-size: 20px;
+            }
+    </style>
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="one">
+        <div>
+            <table>
+                <tr>
+                    <td>First Number :</td>
+                    <td> <input type="number" name="a" id="first" placeholder="Enter first number" class="NumberInput" /> </td>
+                </tr>
+                <tr>
+                    <td>Second Number :</td>
+                    <td> <input type="number" name="b" id="second" placeholder="Enter second number" class="NumberInput" /> </td>
+                </tr>
+                <tr>
+                    <td>Third Number :</td>
+                    <td> <input type="number" name="c" id="third" placeholder="Enter third number" class="NumberInput" /> </td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td colspan="2"> <button onclick="LargestNum()">CHECK</button> </td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td colspan="2"> <button onclick="DisplayDateTime()">SHOW DATE TIME</button> </td>
+                </tr>
+            </table>
+            <p id="num"></p>
+        </div>
+    </div>
+    <script>
+        function LargestNum(){
+            num1 = $("#first").val();
+            num2 = $("#second").val();
+            num3 = $("#third").val();
+
+            var array = [num1,num2,num3];
+            var largest = Math.max.apply( null, array)
+            console.log(largest)
+            $("#num").html(largest + " is the largest numbr.");
+        }  
+        function DisplayDateTime(){
+            var date = new Date()
+            $("#num").html(date);
+        }
+    </script>
+</body>
+</html>

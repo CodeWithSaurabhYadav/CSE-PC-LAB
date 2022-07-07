@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* text-align: justify; */
+}
+body{
+    background-image: url("images/GO_PRO_IMG_1.jpg");
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    margin: 12px;
+}
+.logo {
+    width: 150px;
+    height: 80px;
+    margin-right: auto;
+    margin-left: 0%;
+    border: none;
+    border-radius: 12px;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    background-color: blue;
+    padding: 2%;
+    /* border:3px solid black; */
+}
+
+.nav__links a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+.nav__links li {
+    padding: 0px 30px;
+}
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: purple;
+}
+
+.cta {
+    padding: 1%;
+    background-color: rgb(255, 194, 79);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+.container {
+    border: none;
+    background-color: red;
+
+}
+.item {
+    border: 2px solid rgba(167, 167, 167,0.4);
+    margin: 1%;
+    padding: 2% 3%;
+    background: rgb(235, 232, 227);
+}
+#cont_img {
+    float: left;
+    width: 44%;
+    background-color: white;
+}
+#details {
+    border: none;
+    background-color: white;
+    float: left;
+    width: 44%;
+}
+#end{
+    width: 98%;
+    clear: both;
+}
+img{
+    cursor: pointer;
+    border: 13px solid yellow;
+}
+.txt{
+    text-align: left;
+}
+
+table{
+    border: 3px solid black;
+}
+
+#specs specs_tr{
+    border: 1px solid black;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PO18</title>
+        <style>
+        p {
+            font-size: 20px;
+            color: red;
+        }
+        body {
+            text-align: center;
+        }
+        #panel,
+        #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+        span{
+            display: block;
+            margin: 0px 20px;
+        }
+    </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <p>If you click on me, I will disappear.</p>
+        <span>Name: <input type="text" id="test"></span>
+        <button>Show </button>
+        <div id="flip">Click to slide down panel</div>
+        <div id="panel">Hello world</div>
+        <script>
+            $(document).ready(function () {
+                $("p").click(function () {
+                    $(this).hide();
+                });
+            });
+            $(document).ready(function () {
+                $("button").click(function () {
+                    alert("Value: " + $("#test").val());
+                });
+            });
+            $(document).ready(function () {
+                $("#flip").click(function () {
+                    $("#panel").slideDown("slow");
+                });
+            });
+        </script>
+    </body>
+</html>

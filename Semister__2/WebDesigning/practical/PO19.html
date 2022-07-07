@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PO19</title>
+        <style>
+        button {
+            height: 50px;
+            width: 200px;
+        }
+        body {
+            text-align: center;
+        }
+    </style>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <p>Input Field: <input type="text" name="userInput" placeholder="click
+                to add text">
+        </p>
+        <button id="set">
+            click to Add text
+        </button>
+        <script>
+        $(document).ready(function () {
+            $("#set").click(function () {
+                $("input:text").val("Hello World!");
+            });
+        });
+    </script>
+    </body>
+</html>

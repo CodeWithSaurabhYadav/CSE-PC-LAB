@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PO11</title>
+        <style>
+        body{
+            background-image: linear-gradient(to right, darkblue, blue, skyblue, white);
+        }
+        h1 {
+            /* color: white; */
+            text-shadow: 2px 2px 4px #000000;
+            font-size: 400%;
+        }
+        div {
+            position: relative;
+            text-align: center;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes example {
+            0% {
+                color: white;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                color: skyblue;
+                left: 200px;
+                top: 0px;
+            }
+            50% {
+                color: darkblue;
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                color: skyblue;
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                color: white;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div>
+            <h1>CSS ANIMATION</h1>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<style>
+		body{
+			text-align: center;
+            font-size: 15px;
+		}
+        form{
+            font-size: 25px;
+            color: black;
+            font-weight: bolder;
+        }
+        fieldset{
+            background: aquamarine;
+            align-items: center;
+            text-align: center;
+            width: 80%;
+            border: 4px solid red;
+        }
+        table{
+            width: 80%;
+            margin: 100px auto;
+        }
+        table tr{
+            width: 200px;
+        }
+        table tr td{
+            background: rgb(1, 177, 118);
+            width: 200%;
+            padding: 15px;
+        }
+        input{
+            height: 30px;
+            width: 300px;
+        }
+        input[type=submit]{
+            width: auto;
+            height: auto;
+            padding: 8px;
+            font-size: 25px;
+            margin: 10px auto;
+            background-color: aquamarine;
+            border: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        input[type=submit]:hover{
+            opacity: 0.6;
+        }
+        label{
+            color: blue;
+        }
+        .pre_label{
+            color: black;
+        }
+	</style>
+	<script>
+		$().ready(function () {
+			$("#bookissu").validate({
+				rules: {
+					firstname: "required",
+					lastname: "required",
+					address: {
+						required: true,
+						minlength: 2 
+					},
+					email: {
+						required: true,
+						email: true
+					},
+					book: {
+						required: true,
+						text: true
+					},
+					agree: "required"
+				},
+				messages: {
+					firstname: "Please enter your firstname",
+					lastname: "Please enter your lastname",
+					address: {
+						required: "Please enter a address",
+						minlength: "Your address must consist of at least 2 characters"
+					},
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+    <form class="cmxform" id="bookissu" method="get" action="form-handler.html" autocomplete="off">
+		<fieldset>
+			<legend>BOOK Issue Form</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="firstname" class="pre_label">First Name</label>
+                    </td>
+                    <td>
+                        <input id="firstname" name="firstname" type="text"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lastname" class="pre_label">Last Name</label>
+                    </td>
+                    <td>
+                        <input id="lastname" name="lastname" type="text"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address" class="pre_label">Address</label>
+                    </td>
+                    <td>
+                        <input id="address" name="address" type="text"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email" class="pre_label">Email</label>
+                    </td>
+                    <td>
+                        <input id="email" name="email" type="email"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="text" class="pre_label">Book Name</label>
+                    </td>
+                    <td>
+                        <input id="book" name="book" type="book"></input>
+                    </td>
+                <tr>
+                    <td colspan="2">
+                        <input class="submit" type="submit" value="submit">
+                    </td>
+                </tr>
+            </table>
+		</fieldset>
+	</form>
+</body>
+</html>

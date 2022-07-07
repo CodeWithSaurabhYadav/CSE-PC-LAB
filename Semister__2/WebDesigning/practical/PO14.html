@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PO14</title>
+    <style>
+        button{
+            height: 50px;
+            width: 100px;
+        }
+        body{
+            text-align: center;
+        }
+        p{
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Click to get Date and Time</h1>
+
+    <button type="button" onclick="time()">Click here.</button>
+
+    <p id="date_time_button"></p>
+
+
+    <script>
+        function time(){
+            document.getElementById('date_time_button').innerHTML = Date()
+        }
+    </script>
+</body>
+
+</html>

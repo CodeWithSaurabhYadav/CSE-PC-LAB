@@ -1,0 +1,7 @@
+Course 1 : DLCD
+Course 2 : Python
+Course 3 : Web Designing
+Course 4 : NL
+Course 5 : Calculas
+Course 6 : ES
+Course 7 : ED
