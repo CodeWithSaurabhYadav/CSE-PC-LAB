@@ -7,9 +7,6 @@
 #         file.close()
 #         return counter_num
 
-from secrets import choice
-
-
 def extract_txt(file_name):
     # This reads the lines of the text file
     with open(file_name,"r") as file:
@@ -115,6 +112,7 @@ def main():
         main()
     
 if __name__ == "__main__":
+<<<<<<< HEAD:Semister__2/Python/ClassRoomCodes/WIKI_FILE.py
     print('''
         Your choices :
         1) Find text
@@ -122,3 +120,6 @@ if __name__ == "__main__":
         3) Exit
         ''')
     main()
+=======
+    main()
+>>>>>>> b868e1d23ddc831f747e62ca450437eb14cc059a:Semister__2/Python/main_programs/WIKI_FILE.py
