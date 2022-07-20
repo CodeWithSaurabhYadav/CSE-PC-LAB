@@ -19,6 +19,7 @@ public class Prog2{
         System.out.print("Enter number 2 : ");
         float num2 = input.nextFloat();
 
+        //Switch-Case to see which operation we need to perform
         switch (operation) {
             case 1 :
                 System.out.println("Addition");
@@ -40,6 +41,10 @@ public class Prog2{
                 float division = num1 / num2;
                 System.out.println("The answer is : " + division);
                 break;
+            default:
+                System.out.println("Invalid Operator!!!");
+
+        input.close();
         }
     }
 }
