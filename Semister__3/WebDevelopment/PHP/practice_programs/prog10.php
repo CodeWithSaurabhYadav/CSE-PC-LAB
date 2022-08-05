@@ -1,21 +1,32 @@
 <?php
 
-    // $cars = array("Volvo", "BMW", "Toyota");
+    // Addition Function
+    function addition($num1, $num2):float{
+        return ($num1 + $num2);
+    }
+    // Subtraction Function
+    function subtract($num1, $num2):float{
+        return ($num1 - $num2);
+    }
+    // Multiplication Function
+    function multiplication($num1, $num2):float{
+        return ($num1 * $num2);
+    }
+    // Division Function
+    function division($num1, $num2):float{
+        if ($num2 == 0) return 0;
+        else return ($num1 / $num2);
+    }
 
-    // echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".\n";
+    // Taking the valures from the user
+    $num1 = (float) readline("Number 1 : ");
+    $num2 = (float) readline("Number 2 : ");
 
-    // // $cars[0] = "Mercedes";
-    // $arrLength = count($cars);
-    // // $rsort($cars);
-    
-    // for ($i = 0; $i < $arrLength; $i++) {
-    //     echo $cars[$i] . " \n";
-    // }
-    // foreach ($cars as $car) {
-    //     echo $car . " \n";
-    // }
+    // Displaying the values
+    echo "The sum is : ",addition($num1, $num2),"\n";
+    echo "The difference is : ",subtract($num1, $num2),"\n";
+    echo "The product : ",multiplication($num1, $num2),"\n";
+    echo "The division is : ",division($num1, $num2),"\n";
 
-    $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
-    echo "Peter is " . $age['Peter'] . " years old.\n";
 
 ?>
