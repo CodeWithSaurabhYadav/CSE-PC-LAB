@@ -1,0 +1,22 @@
+        <!-- for ($array1Index = 0; $array1Index < count($array1); $array1Index++){   // Getting the index of the array1 for first time
+            for ($array1Index2 = 0; $array1Index2 < count($array1); $array1Index2++){   // Getting the index of the array1 for second time
+                for ($array2Index = 0; $array2Index < count($array2); $array2Index++){   // Getting the index of the array2 for first time
+                    for ($array2Index2 = 0; $array2Index2 < count($array2); $array2Index2++){   // Getting the index of the array2 for second time
+                        if ($array1[$array1Index] != $array1[$array1Index2]){   // Checking if the value of the array1 is repeated into its parent array or not
+                            if ($array1[$array1Index] != $array2[$array2Index1]){   // Checking if the value of the array1 is repeated into its array2 or not
+                                $uniqueValue[] = $array1[$array1Index];    // If both the above conditions are false then $unique array is been added with that value
+                            }
+                        }
+                        if ($array2[$array2Index] != $array2[$array2Index2]){   // Checking if the value of the array2 is repeated into its parent array
+                            if ($array2[$array2Index] != $array1[$array1Index]){   // Checking if the value of the array2 is repeated into its array1 or not
+                                $uniqueValue[] = $array1[$array1Index];   // If both the above conditions are false then $unique array is been added with that value
+                            }
+                        }
+                        break;
+                    }
+                    break;
+                }
+                break;
+            }
+            break;
+        } -->

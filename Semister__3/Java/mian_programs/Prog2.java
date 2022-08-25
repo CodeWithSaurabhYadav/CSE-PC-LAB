@@ -41,5 +41,6 @@ public class Prog2{
                 System.out.println("The answer is : " + division);
                 break;
         }
+        input.close();
     }
 }
