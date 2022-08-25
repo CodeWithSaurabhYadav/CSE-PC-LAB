@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Prog5{
@@ -14,15 +13,37 @@ public class Prog5{
         System.out.print("Number 3: ");
         int num3 = input.nextInt();
         
-        // Aranging the number in descending order
-        int[] numbers = {num1,num2,num3};
-        Arrays.sort(numbers);
-        System.out.println("The numbers in descending order are: ");
+        int temp = num1;
+        if ( num1 > num2 && num1 > num3){
+            System.out.println("1st condition");
 
-        for (int i = (numbers.length-1); i >= 0; i--) {
-            System.out.print(numbers[i] + " ");
+            if ( num2 < num3){
+                num2 = num3;
+                num3 = temp;
+            }
         }
-        System.out.println();
+        else if ( num2 > num1 && num2 > num3){
+            System.out.println("2nd condition");
+            num1 = num2;
+            num2 = temp;
+
+            if ( num2 < num3){
+                num2 = num3;
+                num3 = temp;
+            }
+        }
+        else if ( num3 > num1 && num3 > num2){
+            System.out.println("2nd condition");
+            num1 = num3;
+            num3 = temp;
+
+            if ( num2 < num3){
+                num2 = num3;
+                num3 = temp;
+            }
+        }
+
+        System.out.println(num1 + " " + num2 + " " + num3);
         input.close();
     }
 }
