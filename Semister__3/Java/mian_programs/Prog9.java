@@ -31,39 +31,52 @@ public class Prog9{
         String arrayForOnes[] = new String[matrix.length];
         String arrayForOnesColumn[] = new String[matrix.length];
         String arrayForOnesDigonal[] = new String[matrix.length];
+        // String arrayForOnesDigonal2[] = new String[matrix.length];
 
 
         // Counting 0's and 1's into the generated matrix
-        int count2 = 0; // count variable for 1's diagonal
-        int count3 = 0; // count variable for 1's diagonal
+        int count2 = 0; // count variable for 1's diagonal 1
+        int count3 = 0; // count variable for 1's diagonal 2
         for (int crow = 0; crow < matrix.length; crow++){
             int count0 = 0; // count variable for 1's col
             int count1 = 0; // count variable for 1's row
             for (int ccolumn = 0; ccolumn < matrix.length; ccolumn++){
                 if (matrix[ccolumn][crow] == 1) count0++;  // Counting number of 1's in column
                 if (matrix[crow][ccolumn] == 1) count1++;  // Counting number of 1's in row
-                if ( crow == ccolumn) if (matrix[crow][ccolumn] == 1) count2++; // Counting the number of 1's in diagonal
+                if ( crow == ccolumn) if (matrix[crow][ccolumn] == 1) count2++; // Counting the number of 1's in diagonal (left => right)
+                for (int drow = matrix.length-1; drow >= 0; drow--) if (crow == drow) if (matrix[drow][ccolumn] == 1) ++count3; // Counting the number of 1's in diagonal (right => left)
+
             }
             for (int cncolumn = (matrix.length-1); cncolumn >= 0; cncolumn--){
                 if (matrix[cncolumn][crow] == 1) count0++;  // Counting number of 1's in column
                 if (matrix[crow][cncolumn] == 1) count1++;  // Counting number of 1's in row
-                if ( crow == cncolumn) if (matrix[crow][cncolumn] == 1) count3++; // Counting the number of 1's in diagonal
             }
             if (count0%2 == 0) arrayForOnesColumn[crow] = "The col " + (crow +1 ) + " has even number of 1's"; // Appending the value if count in column is EVEN
             if (count1%2 == 0) arrayForOnes[crow] = "The row " + (crow +1 ) + " has even number of 1's"; // Appending the value if count in row is EVEN
         }
-        if (count2%2 == 0) arrayForOnesDigonal[0] = "The diagonal has even number of 1's"; // Appending the value if count in diagonal is EVEN
-        else  arrayForOnesDigonal[0] = "The diagonal has odd number of 1's"; // Appending the value if count in diagonal is odd
+        
+        // Appending for diagonal (left => right)
+        if (count2%2 == 0) arrayForOnesDigonal[0] = "The diagonal (left => right) has even number of 1's"; // Appending the value if count in diagonal is EVEN
+        else  arrayForOnesDigonal[0] = "The diagonal (left => right) has odd number of 1's"; // Appending the value if count in diagonal is odd
+        
+        if (count3%2 == 0) arrayForOnesDigonal[1] = "The diagonal (right => left) has even number of 1's"; // Appending the value if count in diagonal is EVEN
+        else  arrayForOnesDigonal[1] = "The diagonal (right => left) has odd number of 1's"; // Appending the value if count in diagonal is odd
+
+        // Printing for rows
         System.out.println("For rows : ");
         for (int arrayForOnesRow = 0; arrayForOnesRow < arrayForOnes.length; arrayForOnesRow ++){
             if (arrayForOnes[arrayForOnesRow] != null) // Checking if the particular index value is null or not
                 System.out.println(arrayForOnes[arrayForOnesRow]); // If value is not null then dispaling the value
         }
+
+        // Printing for columns 
         System.out.println("\nFor columns : ");
         for (int arrayForOnesCol = 0; arrayForOnesCol< arrayForOnesColumn.length; arrayForOnesCol++){
             if (arrayForOnesColumn[arrayForOnesCol] != null) // Checking if the particular index value is null or not
                 System.out.println(arrayForOnesColumn[arrayForOnesCol]); // If value is not null then dispaling the value
         }
+
+        // Printing for diagonal (left => right)
         System.out.println("\nFor diagonal : ");
         for (int arrayForOnesDig = 0; arrayForOnesDig< arrayForOnesDigonal.length; arrayForOnesDig++){
             if (arrayForOnesDigonal[arrayForOnesDig] != null) // Checking if the particular index value is null or not
