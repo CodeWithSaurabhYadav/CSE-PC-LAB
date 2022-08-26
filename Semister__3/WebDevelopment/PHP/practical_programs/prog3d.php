@@ -1,6 +1,6 @@
 <?php
 
-    function generateUserArray(int $usercount){
+    function generateUserArray($usercount){
         $count = 1;
         $usrCredintials = array();
         while ($count <= $usercount){
