@@ -17,12 +17,28 @@
 
     //PHP CONSTANTS
     echo PHP_VERSION."\n"; // outputs the version of PHP
-    echo _FILE_."\n"; // outputs the path and filename of the current script
-    echo _LINE_."\n"; // outputs the current line number of the file
-    echo _DIR_."\n"; // outputs the path of the current script
-    echo _FUNCTION_."\n"; // outputs the name of the current function
-    echo _CLASS_."\n"; // outputs the name of the current class
-    echo _METHOD_."\n"; // outputs the name of the current method
-    echo _NAMESPACE_."\n"; // outputs the name of the current namespace
+    echo __FILE__; // outputs the path and filename of the current script
+    echo __LINE__."\n"; // outputs the current line number of the file
+    echo __DIR__."\n"; // outputs the path of the current script
+
+    function myfun(){
+        echo __FUNCTION__."\n"; // outputs the name of the current function
+    }
+    myfun();
+    class myclass{
+        public function myfunClass(){
+            echo __CLASS__."\n"; // outputs the name of the current class
+        }
+        public function myfunMethod(){
+            echo __METHOD__."\n"; // outputs the name of the current method
+        }
+        public function myfunNamespace(){
+            echo __NAMESPACE__."\n"; // outputs the name of the current namespace
+        }
+    }
+    $obj = new myclass();
+    $obj->myfunClass();
+    $obj->myfunMethod();
+    $obj->myfunNamespace();
     // THERE ARE MANY MORE PRE-DEFINED VARIABLES CONSTANTS AVAILABLE IN PHP
 ?>
