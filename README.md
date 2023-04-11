@@ -1,7 +1,11 @@
 ## Table of contents
-* [General info](#general-info)
-* [Download](#download)
-* [Install SimpleCpp](#to-install-simplecpp-on-your-system-follow-below-links)
+- [Table of contents](#table-of-contents)
+- [General info](#general-info)
+  - [- CSE-PC-LAB](#--cse-pc-lab)
+- [Download](#download)
+  - [Requirement](#requirement)
+- [To install SimpleCpp on your system follow below links](#to-install-simplecpp-on-your-system-follow-below-links)
+- [To Run Semister__3 files and programs you need](#to-run-semister__3-files-and-programs-you-need)
 
 ## General info
 ### - [CSE-PC-LAB](https://github.com/CodeWithSaurabhYadav/CSE-PC-LAB)
@@ -37,3 +41,5 @@ https://user-images.githubusercontent.com/50881320/156508404-a94dc723-2c04-4baa-
 <br>
 <img alt="undefined" src="https://badgen.net/badge/Download/macOS/?color=grey&icon=apple&label">
 https://user-images.githubusercontent.com/50881320/156508396-aaaa90df-16bc-463e-b4b7-13e489cf3175.mp4
+
+## To Run Semister__3 files and programs you need

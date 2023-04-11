@@ -83,8 +83,4 @@ public class Prog9{
                 System.out.println(arrayForOnesDigonal[arrayForOnesDig]); // If value is not null then dispaling the value
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 8a5b7f3e0c22a6832004e9bf5338aab59701b6a3
